@@ -1,0 +1,36 @@
+{
+  "brokers": [
+    {
+      "id": "67de7de4a6d407478dc62839",
+      "name": "anshu",
+      "email": "anshu@gmail.com",
+      "phone": "1234567890",
+      "address": "amroli",
+      "brokerRate": "80",
+      "active": true
+    },
+    {
+      "id": "67de9c48a4ccf05322f1d31e",
+      "name": "Ritik Raj",
+      "email": "raj@gmail.com",
+      "phone": "1234567890",
+      "address": "ffff",
+      "brokerRate": "80",
+      "active": true
+    }
+  ],
+  "diamonds": [
+    {
+      "id": "67dea511f6322a89aa90a904",
+      "stockNo": "7852006SST",
+      "carat": "2.5",
+      "shape": "round",
+      "color": "Y",
+      "clarity": "VVt2",
+      "rapPrice": "14000.00",
+      "disc": "2.56",
+      "ppc": "118500",
+      "totalAmount": "14500"
+    }
+  ]
+}

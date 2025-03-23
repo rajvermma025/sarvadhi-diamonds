@@ -1,0 +1,34 @@
+/** @format */
+
+@import "tailwindcss";
+
+@theme {
+	--font-poppins: "Poppins", sans-serif;
+	--shadow-navbar: 0px 0px 8px 0px #0000000a;
+	--color-box: #696774;
+	--color-secondary: #8ba1b3;
+	--color-primary: #2a67b2;
+	--color-bgPrimary: #2a67b20a;
+	--color-text: #0a1013;
+}
+
+.ant-btn-default {
+	@apply !border-primary;
+}
+
+.ant-table-wrapper .ant-table-column-title,
+th.ant-table-cell {
+	@apply !text-sm !font-semibold !text-secondary;
+}
+
+td.ant-table-cell {
+	@apply !text-base !font-normal !text-[#292929];
+}
+
+.ant-input-number {
+	@apply !w-full;
+}
+
+.ant-input-number-handler-wrap {
+	@apply !hidden;
+}
