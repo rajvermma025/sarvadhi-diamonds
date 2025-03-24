@@ -27,6 +27,7 @@ export const deleteDiamond = createAsyncThunk<string, string>("diamonds/deleteDi
 const initialState: IDiamondState = {
 	diamonds: [],
 	selectedDiamond: null,
+	selectedDiamondTran: null,
 	status: "idle",
 	error: null,
 };
@@ -37,6 +38,9 @@ const DiamondSlice = createSlice({
 	reducers: {
 		setSelectedDiamond: (state, action: PayloadAction<IDiamond | null>) => {
 			state.selectedDiamond = action.payload;
+		},
+		setSelectedDiamondTran: (state, action: PayloadAction<IDiamond | null>) => {
+			state.selectedDiamondTran = action.payload;
 		},
 	},
 	extraReducers: (builder) => {
@@ -65,5 +69,5 @@ const DiamondSlice = createSlice({
 	},
 });
 
-export const { setSelectedDiamond } = DiamondSlice.actions;
+export const { setSelectedDiamond, setSelectedDiamondTran } = DiamondSlice.actions;
 export default DiamondSlice.reducer;

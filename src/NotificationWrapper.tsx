@@ -24,6 +24,7 @@ const NotificationProvider: React.FC<IChildrenNode> = ({ children }) => {
 	const openNotification = (type: NotificationType, message: string) => {
 		api[type]({
 			message: message,
+			duration: 2,
 		});
 	};
 

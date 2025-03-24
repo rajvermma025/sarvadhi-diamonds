@@ -21,8 +21,21 @@ th.ant-table-cell {
 	@apply !text-sm !font-semibold !text-secondary;
 }
 
+.transaction-table .ant-table-cell {
+	@apply !px-5 !py-2;
+}
+
+.transaction-table .ant-table-wrapper .ant-table-column-title,
+.transaction-table th.ant-table-cell {
+	@apply !text-xs !font-semibold !text-[#06031C];
+}
+
 td.ant-table-cell {
 	@apply !text-base !font-normal !text-[#292929];
+}
+
+.transaction-table td.ant-table-cell {
+	@apply !text-xs !font-normal !text-[#292929];
 }
 
 .ant-input-number {
@@ -31,4 +44,12 @@ td.ant-table-cell {
 
 .ant-input-number-handler-wrap {
 	@apply !hidden;
+}
+
+.ant-descriptions-item-label {
+	@apply !text-xs !font-semibold !text-text !px-5 !py-2;
+}
+
+.ant-descriptions-item-content {
+	@apply !text-xs !font-semibold !text-[#98999A] !px-5 !py-2;
 }

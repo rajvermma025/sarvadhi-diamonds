@@ -1,36 +1,70 @@
 {
-  "brokers": [
-    {
-      "id": "67de7de4a6d407478dc62839",
-      "name": "anshu",
-      "email": "anshu@gmail.com",
-      "phone": "1234567890",
-      "address": "amroli",
-      "brokerRate": "80",
-      "active": true
-    },
-    {
-      "id": "67de9c48a4ccf05322f1d31e",
-      "name": "Ritik Raj",
-      "email": "raj@gmail.com",
-      "phone": "1234567890",
-      "address": "ffff",
-      "brokerRate": "80",
-      "active": true
-    }
-  ],
-  "diamonds": [
-    {
-      "id": "67dea511f6322a89aa90a904",
-      "stockNo": "7852006SST",
-      "carat": "2.5",
-      "shape": "round",
-      "color": "Y",
-      "clarity": "VVt2",
-      "rapPrice": "14000.00",
-      "disc": "2.56",
-      "ppc": "118500",
-      "totalAmount": "14500"
-    }
-  ]
+	"brokers": [
+		{
+			"id": "67de7de4a6d407478dc62839",
+			"name": "anshu",
+			"email": "anshu@gmail.com",
+			"phone": "1234567890",
+			"address": "amroli",
+			"brokerRate": 80,
+			"active": true
+		},
+		{
+			"id": "67de9c48a4ccf05322f1d31e",
+			"name": "Ritik Raj",
+			"email": "raj@gmail.com",
+			"phone": "1234567890",
+			"address": "ffff",
+			"brokerRate": 80,
+			"active": true
+		},
+		{
+			"name": "Rahul",
+			"email": "eahul@gmail.com",
+			"phone": "1254454545",
+			"address": "adajan",
+			"brokerRate": 60,
+			"active": true,
+			"id": "67e0e8a0ff7c7929725ca7a1"
+		}
+	],
+	"diamonds": [
+		{
+			"id": "67e0fd2a208661668deaaa75",
+			"stockNo": "1991690MKR",
+			"carat": 2.8,
+			"shape": "FLAT",
+			"color": "G",
+			"clarity": "GGY",
+			"rapPrice": 15000,
+			"disc": 80,
+			"ppc": 3000,
+			"totalAmount": 8400
+		},
+		{
+			"id": "67e0ff4c4f41e8f74a380ab7",
+			"stockNo": "2087283FVN",
+			"carat": 2.8,
+			"shape": "FLAT",
+			"color": "G",
+			"clarity": "GGY",
+			"rapPrice": 20000,
+			"disc": 60,
+			"ppc": 8000,
+			"totalAmount": 22400
+		},
+		{
+			"id": "67e0ffb9c610f753ff8fb0ed",
+			"stockNo": "8932820PIS",
+			"carat": 3.5,
+			"shape": "FLAT",
+			"color": "G",
+			"clarity": "GGY",
+			"rapPrice": 12000,
+			"disc": 60,
+			"ppc": 16800,
+			"totalAmount": 58800
+		}
+	],
+	"transactions": []
 }

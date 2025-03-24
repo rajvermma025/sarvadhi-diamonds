@@ -14,6 +14,7 @@ export interface IDiamond {
 export interface IDiamondState {
 	diamonds: IDiamond[];
 	selectedDiamond: IDiamond | null;
+	selectedDiamondTran: IDiamond | null;
 	status: "idle" | "loading" | "succeeded" | "failed";
 	error: string | null;
 }

@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { deleteDiamond, fetchDiamonds, setSelectedDiamond, setSelectedDiamondTran } from "../../redux/slice/diamondSlice";
 import { useAppDispatch, useAppSelector } from "../../hooks/redux";
 import { useNotificationContext } from "../../NotificationWrapper";
-import { deleteDiamond, fetchDiamonds, setSelectedDiamond } from "../../redux/slice/diamondSlice";
-import { Button, Modal, Table, TableProps } from "antd";
 import { IDiamond } from "../../Interfaces/App/Diamonds";
+import { Button, Modal, Table, TableProps } from "antd";
+import React, { useEffect, useState } from "react";
 
 interface DiamondsTableProps {
 	showActions?: boolean;
@@ -60,21 +60,25 @@ const DiamondsTable: React.FC<DiamondsTableProps> = ({ showActions = true }) => 
 			title: "RAP Price",
 			dataIndex: "rapPrice",
 			sorter: (a, b) => parseFloat(a.rapPrice) - parseFloat(b.rapPrice),
+			render: (value) => (value ? `$${Number(value).toLocaleString("en-US")}` : "-"),
 		},
 		{
 			title: "Disc%",
 			dataIndex: "disc",
 			sorter: (a, b) => parseFloat(a.disc) - parseFloat(b.disc),
+			render: (value) => (value ? `${value}%` : "-"),
 		},
 		{
 			title: "PPC",
 			dataIndex: "ppc",
 			sorter: (a, b) => parseFloat(a.ppc) - parseFloat(b.ppc),
+			render: (value) => (value ? `$${Number(value).toLocaleString("en-US")}` : "-"),
 		},
 		{
 			title: "Total Amount",
 			dataIndex: "totalAmount",
-			sorter: (a, b) => a.totalAmount - b.totalAmount,
+			// sorter: (a, b) => a.totalAmount - b.totalAmount,
+			render: (value) => (value ? `$${Number(value).toLocaleString("en-US")}` : "-"),
 		},
 	];
 
@@ -116,7 +120,9 @@ const DiamondsTable: React.FC<DiamondsTableProps> = ({ showActions = true }) => 
 				}}
 				onRow={(record) => ({
 					onClick: () => {
-						dispatch(setSelectedDiamond(record));
+						if (!showActions) {
+							dispatch(setSelectedDiamondTran(record));
+						}
 					},
 				})}
 			/>

@@ -57,6 +57,9 @@ const BrokerTable = () => {
 			title: "Broker Rate",
 			dataIndex: "brokerRate",
 			sorter: (a, b) => a.brokerRate - b.brokerRate,
+			render: (value) => {
+				return `${value}%`;
+			},
 		},
 		{
 			title: "Status",
